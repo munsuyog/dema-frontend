@@ -1,0 +1,27 @@
+.features-animation {
+    display: flex;
+    gap: 10px;
+}
+.features-animation-progress {
+    width: 7px;
+    background-color: #ececee;
+    border-radius: 10px;
+}
+.features-aniation-progress-current {
+    background-color: #3830C9;
+    width: 7px;
+    height: 50px;
+    border-radius: 10px;
+}
+.feature1, .feature2, .feature3 {
+    font-family: var(--font-open-sans);
+    font-weight: 500;
+    font-size: 20px;
+}
+.features-animation-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+    height: 138px;
+}

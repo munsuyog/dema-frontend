@@ -1,0 +1,80 @@
+#download-btn {
+    position: relative;
+    top: 30px;
+}
+.download-btn-front-border {
+    position: absolute;
+    z-index: 2;
+    border: 1.2px solid var(--secondary-500);
+    padding: 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    transform: rotate(6deg);
+}
+.download-btn-back-border {
+    z-index: 0;
+    border: 1.2px solid var(--primary-500);
+    padding: 2px;
+    border-style: dashed;
+    border-radius: 10px;
+    transform: rotate(6deg);
+    margin-left: 10px;
+    position: relative;
+    top:-10px
+}
+.download-btn-front {
+    position: relative;
+    z-index: 2;
+    width: 158px;
+    height: 78px;
+    border-radius: 10px;
+    background-color: var(--secondary-500);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.download-btn-back {
+    z-index: 0;
+    width: 158px;
+    height: 78px;
+    border-radius: 10px;
+    background-color: var(--primary-500);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    opacity: 0.8;
+}
+.qr-image {
+    transform: rotate(-6deg);
+}
+.download-btn-title-container {
+    position: absolute;
+    top: 1px;
+    margin-left: 8px;
+    margin-top: 12px;
+}
+.arrow-text-image{
+    position: relative;
+    top: 16px;
+    left: -10px;
+}
+.download-btn-title {
+    font-size: 18px;
+    font-family: var(--font-open-sans);
+    color: var(--primary-500);
+    font-weight: bold;
+}
+.squiggle-arrow {
+    position: relative;
+    top: 10px;
+    left: 3px;
+    transform: rotate(-6deg);
+}
+.triangle-image {
+    position: relative;
+    left: 20px;
+    top: 5px;
+}
+.download-btn-title-wrapper {
+    height: 100%;
+}
