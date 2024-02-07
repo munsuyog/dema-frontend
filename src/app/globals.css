@@ -71,11 +71,12 @@
 
 html,
 body {
-  overflow-x: hidden;
   margin-left: auto;
   margin-right: auto;
 }
-
+body {
+  overflow-x: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;

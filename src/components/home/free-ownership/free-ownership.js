@@ -23,6 +23,7 @@ const FreeOwnership = () => {
               FREE<span className="title-blue">!</span>
             </span>
           </h2>
+          <Image src="/images/home/free-ownership/squiggle.svg" width={219} height={119} alt="squiggle" className="free-ownership-squiggle" />
         </div>
         <div className="free-ownership-container">
             <div className="free-ownership-video-container">

@@ -1,4 +1,4 @@
-import { Open_Sans, Montserrat, Architects_Daughter } from "next/font/google";
+import { Open_Sans, Montserrat, Architects_Daughter, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -6,7 +6,10 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
 });
-
+const interFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -32,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${openSans.variable} ${demaFont.variable} ${montserrat.variable} ${ArchitectsDaughter.variable}`}
+        className={`${openSans.variable} ${demaFont.variable} ${montserrat.variable} ${ArchitectsDaughter.variable} ${interFont.variable}`}
       >
         {children}
       </body>

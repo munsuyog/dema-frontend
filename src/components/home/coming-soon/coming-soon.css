@@ -1,8 +1,8 @@
 .shop-anywhere {
     width: 100%;
     position: relative;
-    padding-top: 10%;
-    padding-bottom: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .shop-anywhere::before {
     content: '';

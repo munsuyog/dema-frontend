@@ -1,0 +1,45 @@
+.ultimate-experience {
+    width: 1140px;
+    height: 550px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FEF7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bullet-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.point {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-title {
+    font-family: var(--font-open-sans);
+    font-size: 24px;
+}
+.point-text {
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+}
+.cards-container {
+    display: flex;
+    margin-top: 2%;
+    gap: 32px;
+    overflow: hidden;
+}
+.card {
+    flex: 0 0 auto; 
+    width: 20%;
+    height: 227px;
+    background-color: rgba(243, 167, 54, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 12px;
+}

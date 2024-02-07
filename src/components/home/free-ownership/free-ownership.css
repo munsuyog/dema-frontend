@@ -5,6 +5,7 @@
     width: 100%;
     position: relative;
     z-index: 1;
+    padding-bottom: 7%;
 }
 .free-ownership::before {
     content: '';
@@ -54,11 +55,11 @@
 .free-ownership-container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 .free-ownership-animation {
     width: 40%;
+    margin-top: 3%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,4 +90,9 @@
     position: absolute;
     bottom: 100px;
     right: 200px;
+}
+.free-ownership-squiggle {
+    position: absolute;
+    bottom: -150px;
+    right: 450px;
 }
