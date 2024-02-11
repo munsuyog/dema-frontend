@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 30001
 
 # Start the Next.js application
-CMD ["npx", "next", "dev"]
+CMD ["npx", "next", "dev", "-p", "30001", "-H", "0.0.0.0"]
