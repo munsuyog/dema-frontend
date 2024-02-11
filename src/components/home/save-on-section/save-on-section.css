@@ -37,9 +37,9 @@
 }
 .even-after-squiggle {
     position: absolute;
-    top: -7px;
-    left: -17px;
-    z-index: -0.5;
+    top: -25px;
+    left: -15px;
+    z-index: -1;
 }
 .sale-tag {
     position: absolute;

@@ -1,8 +1,28 @@
+'use client'
 import React from "react";
 import "./save-on-section.css";
 import Image from "next/image";
+import useIntersectionObserver from "@/animations/useIntersectionObserver";
 
 const SaveOnSection = () => {
+  const pendulumAnim = {
+    "--delay": '200ms',
+    '--time': '3s',
+    '--direction': '-1'
+  }
+  const pendulumRef = useIntersectionObserver((target) => {
+    target.classList.remove('inactive');
+    target.classList.add('active');
+  }, {threshold: 0.3})
+
+
+  const squiggleAnim = {
+    "--L": "423.50000000000006", "--time": '2s'
+  }
+  const squiggleRef = useIntersectionObserver((target) => {
+    target.classList.remove('inactive');
+    target.classList.add('active');
+  }, {threshold: 0.5})
   return (
     <section id="save-on-section">
       <div className="save-on-section section-padding">
@@ -13,17 +33,16 @@ const SaveOnSection = () => {
             <span className="title-even-after-wrapper">
               <span className="title-even-after">
                 even after
-                <Image
-                  src="/images/home/save-on-section/even-after-squiggle.svg"
-                  width={215}
-                  height={74}
-                  className="even-after-squiggle"
-                />
+                <svg class="inactive even-after-squiggle" xmlns="http://www.w3.org/2000/svg" width="350" height="130" viewBox="0 0 250 83" fill="none" ref={squiggleRef}>
+                  <path d="M142.408 59.1107C98.255 67.6411 8.94169 74.6452 4.91618 34.4178C1.93227 4.59936 58.5 2.45193 93.9999 4.9763C129.5 7.50067 148.505 22.5154 150.968 39.3737C154.996 66.9348 126.534 78.0488 116.708 77.1963" stroke="#22E393" stroke-width="8" stroke-linecap="round" class="tracePath" time="2s" style={squiggleAnim}></path>
+                </svg>
                 <Image
                   src="/images/home/save-on-section/sale-tag.svg"
                   width={57}
                   height={57}
-                  className="sale-tag"
+                  className="sale-tag inactive pendulum"
+                  style={pendulumAnim}
+                  ref={pendulumRef}
                 />
               </span>{" "}
               discounts & coupons

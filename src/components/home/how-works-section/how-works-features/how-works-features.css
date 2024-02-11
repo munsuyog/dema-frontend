@@ -1,6 +1,7 @@
-/* .how-works-features {
-    width: 500px;
-} */
+.how-works-features {
+    display: flex;
+    gap: 20px;
+}
 .how-works-feature {
     display: flex;
     gap: 20px;
@@ -8,19 +9,11 @@
     margin-top: -8px;
     position: relative;
 }
-.how-works-feature.highlight .feature-progress {
-    background-color: var(--primary-500);
-    width: 17px;
-    border-radius: 10px;
-    height: 100px;
-    position: relative;
-    z-index: 1;
-}
 .feature-progress {
     background-color: #3454be;
     width: 17px;
     border-radius: 10px;
-    height: 100px;
+    height: 390px;
     position: relative;
     z-index: -1;
     margin-top: -10px;
@@ -32,18 +25,36 @@
     color: white;
     font-weight: 600;
     letter-spacing: 1%;
+    transition: font-weight 0.2s linear;
 }
 .how-works-feature.highlight h2 {
     color: var(--primary-500);
     font-weight: 700;
 }
+.how-works-feature.highlight .feature-progress {
+    animation: progressAnimation 0.2s linear;
+}
 .how-works-features-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .signup-squiggle {
     position: absolute;
-    top: -10px;
-    left: 193px;
+    top: -20px;
+    left: 157px;
+}
+.feature-progress-current {
+    width: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    border-radius: 10px;
+    background-color: var(--primary-500);
+}
+.feature-progress-current {
+    transition: top 0.2s linear;
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import "./roadmap-section.css";
 import Image from "next/image";
+import Roadmap from "./roadmap/roadmap";
 
 const RoadmapSection = () => {
   return (
     <section id="roadmap-section">
-      <div className="roadmap-section section-padding">
+      <div className="roadmap-section">
         <div className="section-title-wrapper">
           <h2 className="roadmap-section-title">
             A marketplace roadmap <br />
@@ -26,8 +27,20 @@ const RoadmapSection = () => {
             height={131}
             className="roadmap-squiggle"
         />
+          <Image
+            src="/images/home/roadmap-section/flower-vector.svg"
+            width={40}
+            height={45}
+            className="roadmap-flower"
+        />
+          <Image
+            src="/images/home/roadmap-section/star-light.svg"
+            width={40}
+            height={45}
+            className="roadmap-star-light"
+        />
         </div>
-
+        <Roadmap />
       </div>
     </section>
   );

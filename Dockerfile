@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port that Next.js will run on
-EXPOSE 3000
+EXPOSE 30001
 
 # Start the Next.js application
 CMD ["npx", "next", "dev"]

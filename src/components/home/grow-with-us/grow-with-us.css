@@ -72,6 +72,8 @@
 .ultimate-experience-wrapper {
     position: relative;
     margin-top: 10%;
+    display: flex;
+    justify-content: center;
 }
 .ultimate-arrow-top {
     position: absolute;

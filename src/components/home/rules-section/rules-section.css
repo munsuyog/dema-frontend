@@ -1,3 +1,6 @@
+#rules-section {
+    padding-top: 20%;
+}
 .rules-section-title {
     font-family: var(--font-open-sans);
     font-size: 50px;

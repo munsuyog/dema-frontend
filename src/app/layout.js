@@ -1,6 +1,7 @@
 import { Open_Sans, Montserrat, Architects_Daughter, Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import './animations.css'
 
 const openSans = Open_Sans({
   subsets: ["latin"],
