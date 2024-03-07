@@ -78,3 +78,31 @@
 .download-btn-title-wrapper {
     height: 100%;
 }
+
+@media screen and (max-width: 440px) {
+
+    .download-btn-front {
+        width: 100px;
+        height: 48px;
+    }
+    .download-btn-back {
+        width: 100px;
+        height: 48px;
+    }
+    .qr-image {
+        width: 30px;
+        height: 30px;
+    }
+    .download-btn-title {
+        font-size: 10px;
+    }
+    .squiggle-arrow {
+        width: 30px;
+        top: 0;
+        rotate: 20deg;
+    }
+    .download-btn-title-container {
+        position: absolute;
+        top: -15px;
+    }
+}

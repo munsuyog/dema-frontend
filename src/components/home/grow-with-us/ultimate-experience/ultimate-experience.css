@@ -8,6 +8,9 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.splitContainer {
+    --box-width: 1140px
+}
 .ultimate-experience.contrast {
     background-color: var(--secondary-500) !important;
 }
@@ -114,3 +117,32 @@
     width: 200px; /* Adjust card width as needed */
     margin-right: 20px; /* Adjust card spacing as needed */
   }
+
+@media screen and (max-width: 768px) {
+    .splitContainer {
+        --box-width: 440px !important
+    }
+    .ultimate-experience {
+        width: auto;
+        height: 300px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+    .point-text {
+        font-size: 10px;
+    }
+    .card {
+        width: 130px;
+        height: 140px;
+        padding: 10px;
+    }
+    .card img {
+        width: 25px;
+        height: auto;
+    }
+    .point .card-image {
+        width: 7px;
+        height: auto;
+    }
+}

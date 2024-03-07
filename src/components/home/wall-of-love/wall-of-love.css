@@ -66,3 +66,16 @@
     rotate:-40deg;
     opacity: 0.5;
 }
+@media screen and (max-width: 768px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+    .wall-title-squiggle {
+        width: 250px;
+        height: auto;
+        top: -5px
+    }
+    .wall-of-love {
+        padding-top: 25%;
+    }
+}

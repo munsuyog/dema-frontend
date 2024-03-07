@@ -2,8 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import './how-works-features.css';
 import Image from 'next/image';
+import { useMediaQuery } from 'react-responsive';
 
 const HowWorksFeatures = () => {
+  const mobile = useMediaQuery({maxWidth: 480})
   const [highlightedFeatureIndex, setHighlightedFeatureIndex] = useState(0);
 
   useEffect(() => {
@@ -14,7 +16,7 @@ const HowWorksFeatures = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const progressTop = 100 * highlightedFeatureIndex; // Calculate top value here
+  const progressTop = (mobile ? 70 : 100) * highlightedFeatureIndex; // Calculate top value here
 
   return (
     <div className='how-works-features'>

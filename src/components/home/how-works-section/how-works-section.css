@@ -61,3 +61,41 @@
     top: 250px;
     right: 200px;
 }
+
+@media screen and (max-width: 768px) {
+    .how-works-section {
+        padding-top: 25%;
+        padding-bottom: 25%;
+    }
+    .how-works-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .how-works-image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .how-works-title {
+        font-size: 28px !important;
+    }
+    .arrow-vector {
+        right: auto;
+        width: 100px;
+        bottom: -120px;
+    }
+    .no-signup-squiggle {
+        width: 100px;
+        height: 70px;
+        right: -65px;
+        top: 50px;
+    }
+    .triangle-vector {
+        display: none;
+    }
+    .how-works-flower {
+        left: 0;
+        top: 70px;
+        width: 30px;
+    }
+    
+}

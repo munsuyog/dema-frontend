@@ -58,3 +58,22 @@
 .feature-progress-current {
     transition: top 0.2s linear;
 }
+
+@media screen and (max-width: 768px) {
+    .how-works-feature h2 {
+        font-size: 18px !important;
+    }
+    .feature-progress {
+        width: 10px;
+        height: 270px;
+    }
+    .feature-progress-current {
+        width: 10px;
+        height: 70px;
+    }
+    .signup-squiggle {
+        width: 40px;
+        left: 67px;
+        top: -30px;
+    }
+}

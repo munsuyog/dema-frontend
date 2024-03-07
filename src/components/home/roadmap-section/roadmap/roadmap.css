@@ -78,3 +78,40 @@
     bottom: -100px;
     left: 50%;
 }
+
+@media screen and (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-header img {
+        width: 48px;
+        height: 48px;
+    }
+    .card-header h3 {
+        font-weight: 800;
+        font-size: 22px;
+    }
+    .roadmap-card1,.roadmap-card2, .roadmap-card3 p {
+        font-size: 16px;
+    }
+    .title-more-bold {
+        font-size: 16px;
+    }
+    .roadmap-card1 {
+        top: 5%;
+        left: 2%;
+        flex-direction: column;
+    }
+    .roadmap-card2 {
+        top: 40%;
+        right: 2%;
+    }
+    .roadmap-card2 .card2-image {
+        width: 303px;
+        height: auto;
+    }
+    .roadmap-card3 {
+        top: 70%;
+    }
+}

@@ -30,7 +30,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='footer-links-col'>
+                <div>
+                    <div className='footer-links-row'>
+                    <div className='footer-links-col'>
                     <div className='footer-title'>Explore</div>
                     <div className='footer-link'>
                             <a href='#'>Protocol</a>
@@ -64,6 +66,8 @@ const Footer = () => {
                     </div>
                     <div className='footer-link'>
                             <a href='#'>Returns</a>
+                    </div>
+                </div>
                     </div>
                 </div>
             </div>

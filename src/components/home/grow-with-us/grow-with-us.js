@@ -24,6 +24,7 @@ const GrowWithUs = () => {
                                 </div>
                             </div>
                         </div>
+                        <Image src="/images/home/grow-with-us/live.svg" width={58} height={28} alt='live-vector' className='live-vector' />
                         <Image src="/images/home/grow-with-us/star-vector.svg" width={28} height={32} alt='star-vector' className='star-vector' />
                         <Image src="/images/home/grow-with-us/star-light-vector.svg" width={37} height={42} alt='star-vector' className='star-light-vector' />
                         <Image src="/images/home/grow-with-us/flower-light-vector.svg" width={42} height={47} alt='flower-light-vector' className='flower-light-vector-1' />
@@ -45,6 +46,7 @@ const GrowWithUs = () => {
                                 </div>
                             </div>
                         </div>
+                        <Image src="/images/home/grow-with-us/live.svg" width={58} height={28} alt='live-vector' className='live-vector' />
                         <Image src="/images/home/grow-with-us/star-vector.svg" width={28} height={32} alt='star-vector' className='star-vector' />
                         <Image src="/images/home/grow-with-us/flower-light-vector.svg" width={31} height={35} alt='flower-light-vector' className='flower-light-vector-1' />
                         <Image src="/images/home/grow-with-us/purchases-chart.svg" width={400} height={125} alt='stats' className='users-stats-image' />
@@ -63,6 +65,7 @@ const GrowWithUs = () => {
                                 </div>
                             </div>
                         </div>
+                        <Image src="/images/home/grow-with-us/live.svg" width={58} height={28} alt='live-vector' className='live-vector' />
                         <Image src="/images/home/grow-with-us/star-vector.svg" width={28} height={32} alt='star-vector' className='star-vector' />
                         <Image src="/images/home/grow-with-us/flower-light-vector.svg" width={42} height={47} alt='flower-light-vector' className='flower-light-vector-1' />
                         <Image src="/images/home/grow-with-us/flower-light-vector.svg" width={42} height={47} alt='flower-light-vector' className='flower-light-vector-2' />

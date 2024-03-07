@@ -46,3 +46,23 @@
     top: 290px;
     left: 52%;
 }
+
+@media screen and (max-width: 768px) {
+    .roadmap-section {
+        height: 2000px;
+    }
+    .roadmap-section-title {
+        font-size: 24px !important;
+    }
+    .priority-squiggle {
+        width: 145px;
+        height: auto;
+        top: 0px;
+    }
+    .roadmap-triangle-vector {
+        display: none;
+    }
+    .roadmap-section::before {
+        transform: rotate(0deg);
+    }
+}

@@ -52,6 +52,7 @@ const HeroSection = () => {
                 src="/images/home/hero-section/title-icon01.svg"
                 width={56}
                 height={56}
+                className="title-cart-vector"
               />
             </span>{" "}
             <span className="title-anywhere">anywhere<span className="relative"><Image src="/images/home/hero-section/title-star.svg" width={22} height={25} className="title-star anywhere" /></span></span><br/> Get{" "}

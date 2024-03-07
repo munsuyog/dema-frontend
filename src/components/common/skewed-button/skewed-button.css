@@ -26,3 +26,15 @@
 .shop-anywhere-box span {
     rotate: 2deg;
 }
+
+@media screen and (max-width: 440px) {
+    .shop-anywhere-wrapper {
+        height: 50px;
+        width: 120px;
+    }
+    .shop-anywhere-box {
+        font-size: 12px;
+        width: 120px;
+        height: 40px;
+    }
+}

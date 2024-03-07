@@ -150,3 +150,29 @@
     right: 20px;
     top: 20px;
 }
+.live-vector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+@media screen and (max-width: 768px) {
+    .grow-with-us-title {
+        font-size: 24px;
+        padding-left: 20%;
+        padding-right: 20%;
+        text-align: center;
+    }
+    .grow-with-us-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ultimate-arrow-left {
+        display: none;
+    }
+    .ultimate-squiggle {
+        display: none;
+    }
+    .ultimate-arrow-top {
+        display: none;
+    }
+}

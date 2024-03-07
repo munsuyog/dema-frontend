@@ -55,3 +55,47 @@
     text-align: center;
     font-size: 14px;
 }
+.footer-links-row {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-links-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+    .footer-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-links-container {
+        height: auto;
+    }
+    .footer-links-col:nth-child(1) {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-links-row .footer-links-col {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    .footer-social-icons img {
+        width: 36px;
+        height: 36px;
+    }
+    #footer {
+        height: auto;
+        padding: 20px;
+    }
+    .footer-link-contact a {
+        font-size: 14px;
+    }
+}

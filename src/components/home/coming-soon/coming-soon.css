@@ -74,7 +74,10 @@
 }
 .shop-anywhere-container {
     position: relative;
-    width: 450px;
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
 }
 .shop-anywhere-squiggle {
     position: absolute;
@@ -82,11 +85,67 @@
 }
 .shop-anywhere-flex {
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .shop-anywhere-logos {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    gap: 50px;
+}
+.shop-anywhere-logos img {
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+    .shop-anywhere-flex {
+        align-items: flex-start;
+    }
+    .shop-anywhere::before {
+        background-color: #fff;
+    }
+    .shop-anywhere-squiggle {
+        width: 58px;
+    }
+    .shop-anywhere-wrapper {
+        height: 80px;
+        width: 200px;
+    }
+    .shop-anywhere-flex {
+        flex-direction: column;
+    }
+    .shop-anywhere-container {
+        width: 250px;
+        justify-content: space-between;
+    }
+    .shop-anywhere::before {
+        top: 10px;
+    }
+    .shop-anywhere-squiggle {
+        left: 110px;
+        bottom: -20px;
+    }
+    .shop-anywhere-logo-active img  {
+        width: 60px;
+    }
+    .shop-anywhere-logos img {
+        width: 60px;
+    }
+    .shop-anywhere-logos-wrapper {
+        width: 100%;
+    }
+    .coming-soon-title {
+        width: 113px;
+        height: 28px;
+        font-size: 12px;
+    }
+    .coming-soon-title-wrapper {
+        display: flex;
+        justify-content: left;
+    }
+    .shop-anywhere-logos {
+        gap: 20px;
+    }
 }

@@ -1,10 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./ultimate-experience.css";
 
 const UltimateExperience = () => {
+  const [dimensions, setDimensions] = useState({ width: '1140px', height: '550px' });
   useEffect(() => {
+
     class SplitBox {
       constructor(box) {
         this.box = box;
@@ -93,13 +95,35 @@ const UltimateExperience = () => {
   
       const leftContainer = document.querySelector(".cards-container-amazon");
       const rightContainer = document.querySelector(".cards-container-dema");
+      function handleResize() {
+        if (visualViewport.width < 768) {
+          setDimensions({
+            width: `${visualViewport.width}px`, // Set width to 100% for full width on smaller screens
+            height: `300px`, // Set height to window inner height
+          });
+        } else {
+          setDimensions({
+            width: '1140px', // Default width for larger screens
+            height: '550px', // Default height for larger screens
+          });
+        }
+      }
   
+      // Initial call to set dimensions
+      handleResize();
+  
+      // Event listener for window resize
+      window.addEventListener('resize', handleResize);
       initializeInfiniteScroll(leftContainer);
       initializeInfiniteScroll(rightContainer);
+      // Cleanup on component unmount
+      return () => window.removeEventListener('resize', handleResize);
+  
+
   }, []);
   return (
-    <section style={{height: '550px', width: '1140px'}}>
-    <div className="splitContainer splitBox" style={{background: 'transparent', position: 'relative', '--box-width': '1140px'}}>
+    <section style={dimensions}>
+    <div className="splitContainer splitBox" style={{background: 'transparent', position: 'relative'}}>
       <div className="box-content"  style={{position: 'absolute'}}>
         <div className="ultimate-experience content contrast" style={{width: 'var(--box-width)', position: 'absolute', inset: '0px'}}>
           <div className="section-title">

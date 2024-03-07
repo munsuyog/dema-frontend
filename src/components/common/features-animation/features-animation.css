@@ -13,12 +13,11 @@
     background-color: var(--secondary-500);
     width: 7px;
     border-radius: 10px;
-    height: 70px;
+    height: 40px;
     position: relative;
     z-index: 1;
 }
 .free-ownership-feature.highlight h2 {
-    font-size: 32px;
     font-family: var(--font-open-sans);
     font-weight: bold;
     color: var(--secondary-500);
@@ -27,7 +26,7 @@
     background-color: #ececee;
     width: 7px;
     border-radius: 10px;
-    height: 70px;
+    height: 40px;
     position: relative;
     z-index: -1;
     margin-top: -10px;
@@ -55,7 +54,7 @@
     background-color: #ECECEE;
     width: 7px;
     border-radius: 10px;
-    height: 170px;
+    height: 150px;
     position: relative;
     z-index: -1;
     margin-top: -10px;
@@ -63,7 +62,7 @@
 }
 .free-feature-progress-current {
     background-color: var(--secondary-500);
-    height: 70px;
+    height: 50px;
     border-radius: 10px;
     position: relative;
     top: 0;

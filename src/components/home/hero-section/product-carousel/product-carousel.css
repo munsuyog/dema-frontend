@@ -127,3 +127,21 @@
     background-color: var(--secondary-500);
     height: 2px;
 }
+
+@media screen and (max-width: 768px) {
+    #product-carousel {
+        width: 100%;
+    }
+    .product-image {
+        width: 100%;
+        height: auto;
+        top: 15%;
+        left: 5%;
+    }
+    .product-carousel-progress {
+        right: auto;
+    }
+    .product-carousel-points-info {
+        bottom: 50px;
+    }
+}

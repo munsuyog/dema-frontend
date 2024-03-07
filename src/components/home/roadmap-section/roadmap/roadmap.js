@@ -1,13 +1,28 @@
 'use client'
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './roadmap.css'
 import Image from 'next/image'; // Assuming you're using Next.js
+import { useMediaQuery } from 'react-responsive';
 
 const Roadmap = () => {
     const scrollContainerRef = useRef(null);
     const pathRef = useRef(null);
+    const [isMobile, setMobile] = useState(false)
+    // const mobile = useMediaQuery(('max-width: 480px'));
 
     useEffect(() => {
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+        const isMobile = mediaQuery.matches;
+    
+        // Your existing code for ScrollPathController and event listeners
+    
+        // Update logic based on mobile or desktop
+        if (isMobile) {
+            setMobile(true)
+        } else {
+            setMobile(false)
+        }
+    
         class ScrollPathController {
             constructor(scrollContainer) {
                 this.scrollContainer = scrollContainer;
@@ -157,7 +172,7 @@ const Roadmap = () => {
 
     return (
             <div className="scrollContainer" ref={scrollContainerRef}>
-                <div className="roadmap-card1 absolute opacityTransition" fadeonscroll="" threshhold=".3" style={{ opacity: 0 }}>
+                <div className="roadmap-card1 absolute opacityTransition" fadeonscroll="" threshhold={isMobile ? ".2" : ".3"} style={{ opacity: 0 }}>
                     <div>
                     <div className='card-header'>
                         <Image src="/images/home/roadmap-section/roadmap/card1-header.svg" width={93} height={93} alt='card1-header' />
@@ -167,7 +182,7 @@ const Roadmap = () => {
                     </div>
                     <Image src="/images/home/roadmap-section/roadmap/card1-image.svg" width={310} height={317} alt='card1-image'  />
                 </div>
-                <div className="roadmap-card2 absolute opacityTransition" fadeonscroll="" threshhold=".5" style={{ opacity: 0 }}>
+                <div className="roadmap-card2 absolute opacityTransition" fadeonscroll="" threshhold={isMobile ? ".4": ".5"} style={{ opacity: 0 }}>
                     <div className='card2'>
                     <div className='card-header'>
                         <Image src="/images/home/roadmap-section/roadmap/card2-header.svg" width={93} height={93} alt='card1-header' />
@@ -177,7 +192,7 @@ const Roadmap = () => {
                     </div>
                     <Image src="/images/home/roadmap-section/roadmap/card2-image.svg" width={400} height={410} alt='card1-image' className='card2-image' />
                 </div>
-                <div className="roadmap-card3 absolute opacityTransition" fadeonscroll="" threshhold=".7" style={{ opacity: 0 }}>
+                <div className="roadmap-card3 absolute opacityTransition" fadeonscroll="" threshhold={isMobile ? ".6" : ".7"} style={{ opacity: 0 }}>
                     <div className='card2'>
                     <div className='card-header'>
                         <Image src="/images/home/roadmap-section/roadmap/card3-header.svg" width={93} height={93} alt='card1-header' />
@@ -194,16 +209,11 @@ const Roadmap = () => {
                 
                 {/* <Image src="/dema_files/firstCard.png" className="absolute opacityTransition" alt="" fadeonscroll="" threshhold=".3" style={{ opacity: 0 }} width={500} height={300} /> */}
 
-                <svg width="95%" viewBox="0 0 1401 759" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="95%" viewBox={isMobile ? "0 0 375 1716" : "0 0 1401 759"} fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
-                        d="M-0.497355 314.108C161.137 312.414 306.48 277.921 340.848 172.942
-                        C421.562 -73.6029 67.4174 -2.69558 137.777 147.594
-                        C194.065 267.826 757.504 164.784 991.006 95.0645
-                        C1340.99 24.7472 1385.38 340.643 1385.38 340.643
-                        C1426.6 520.277 1191.31 844.019 765.691 720.179
-                        C421.684 620.085 174.601 674.957 -1.01706 722.458"
+                        d={isMobile ? "M0 10.5C173.5 10.5 370 222 352 452C331.17 718.166 43.5 855 20 1032.5C4.44698 1149.97 198 1705 376.5 1705" : "M-0.497355 314.108C161.137 312.414 306.48 277.921 340.848 172.942 C421.562 -73.6029 67.4174 -2.69558 137.777 147.594 C194.065 267.826 757.504 164.784 991.006 95.0645 C1340.99 24.7472 1385.38 340.643 1385.38 340.643 C1426.6 520.277 1191.31 844.019 765.691 720.179 C421.684 620.085 174.601 674.957 -1.01706 722.458"}
                         stroke="url(#paint0_linear_1_6159)" strokeOpacity="0.8" strokeWidth="21"
-                        className="scrollPath" stay=".6" speed="1" offset=".05" pathLength="3876"
+                        className="scrollPath" stay=".9" speed="1" offset=".05" pathLength="2000"
                         style={{ strokeDasharray: '3876', strokeDashoffset: '3876' }}
                     />
                     <defs>
